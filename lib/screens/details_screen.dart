@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:peliculas_app/widgets/widgets.dart';
 
 class DetailScreen extends StatelessWidget {
   const DetailScreen({super.key});
@@ -16,7 +17,8 @@ class DetailScreen extends StatelessWidget {
           _CustomAppBar(),
           SliverList(delegate: SliverChildListDelegate(
             [ _PosterAndTitle(), 
-             _Overview()
+             _Overview(),
+              CastingCards(),
             ]
           ))
         ],
